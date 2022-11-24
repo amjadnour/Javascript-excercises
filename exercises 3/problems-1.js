@@ -6,9 +6,27 @@
     "no" - otherwise
 */
 
+
 function isSortedAndHow(nums) {
-    
-}
+    asc = true;
+    desc = true;
+    for (let i = 0; i < nums.length; i++) {
+      if(nums[i + 1] <= nums[i]) {
+        desc = false;
+      }
+      else if (nums[i+1] >= nums[i]){
+        asc = false;
+      }
+    }
+  
+    if(asc){
+      return "yes, descending"
+    } else if(desc){
+      return "yes, ascending"
+    } else {
+      return "no"
+    }
+  }
 
 // Do not modify this code
 window.solutions = window.solutions || {}
