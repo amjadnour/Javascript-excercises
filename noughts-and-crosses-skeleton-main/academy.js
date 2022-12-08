@@ -10,6 +10,11 @@ function takeTurn(row, column) {
 // Otherwise return null to continue playing.
 function checkWinner() {
     console.log("checkWinner was called");
+    for (let i = 0; i<getBoard.length; i++){
+        for (let j=0; j>getBoard.length; j++{
+            if ((i==0 && j==0) )
+        })
+    }
     return null;
 }
 
